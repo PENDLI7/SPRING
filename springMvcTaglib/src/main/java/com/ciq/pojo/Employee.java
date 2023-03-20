@@ -1,9 +1,13 @@
 package com.ciq.pojo;
 
 public class Employee {
+	
 	private Integer id;
+	
 	private String name;
+	
 	private String des;
+	
 	private Double salary;
 	public Employee() {
 	}

@@ -10,7 +10,8 @@
 <body>
 <div align="center">
 <h1>Createiq Technologies Employee Registration Form</h1>
-  <form action="./save" method="post">
+
+  <form action="./save" method="post" >
    <table style="with: 80%">
     <tr>
      <td>Emp ID</td>
@@ -18,7 +19,7 @@
     </tr>
     <tr>
      <td>Emp Name</td>
-     <td><input type="text" name="name" /></td>
+     <td><input type="text" name="name"/></td>
     </tr>
     <tr>
      <td>Emp Role</td>
@@ -26,7 +27,7 @@
     </tr>
     <tr>
      <td>Emp salary</td>
-     <td><input type="text" name="salary" /></td>
+     <td><input type="text" name="salary"/></td>
     </tr>
    </table>
    <input type="submit" value="Register" />

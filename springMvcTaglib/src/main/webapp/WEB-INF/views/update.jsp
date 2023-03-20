@@ -13,19 +13,19 @@
    <table style="with: 80%">
     <tr>
      <td>Emp ID</td>
-     <td><input type="text" name="id" /></td>
+     <td><input type="text" name="id" value="${e.id}" readonly="readonly" /></td>
     </tr>
     <tr>
      <td>Emp Name</td>
-     <td><input type="text" name="name" /></td>
+     <td><input type="text" name="name" value="${e.name}" /></td>
     </tr>
     <tr>
      <td>Emp Designation</td>
-     <td><input type="text" name="des" /></td>
+     <td><input type="text" name="des" value="${e.des}"/></td>
     </tr>
     <tr>
      <td>Emp salary</td>
-     <td><input type="text" name="salary" /></td>
+     <td><input type="text" name="salary" value="${e.salary}"/></td>
     </tr>
    </table>
    <input type="submit" value="update" />

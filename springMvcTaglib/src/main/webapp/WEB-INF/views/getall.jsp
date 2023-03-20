@@ -27,8 +27,8 @@
             <td>${e.name}</td>
             <td>${e.des}</td>
             <td>${e.salary}</td>
-             <td><a href="./remove?id=${e.id}">delete</a></td> 
-             <td><a href="./find?id=${e.id}" >updatebyId</a></td>     
+             <td><a href="./remove?id=${e.id}">delete</a>
+             <a href="./find?id=${e.id}" >updatebyId</a></td>     
              </tr>
     </c:forEach></table>
 </body>
