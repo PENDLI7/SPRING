@@ -9,11 +9,11 @@
 <body>
 <div align="center">
 <h1>Createiq Employees Update Form</h1>
-  <form action="./update" method="post">
+  <form action="./update" method="post" modelAttribute="e">
    <table style="with: 80%">
     <tr>
      <td>Emp ID</td>
-     <td><input type="text" name="id" value="${e.id}" readonly="readonly" /></td>
+     <td><input type="text" name="id" value="${e.id}"  /></td>
     </tr>
     <tr>
      <td>Emp Name</td>

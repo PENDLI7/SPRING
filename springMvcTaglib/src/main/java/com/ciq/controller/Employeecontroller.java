@@ -29,11 +29,11 @@ public class Employeecontroller {
 	}
 	
 	@PostMapping("/save")
-	public ModelAndView save(Employee e) {
+	public ModelAndView save(@ModelAttribute("e") Employee e, BindingResult result) {
 //	public ModelAndView save(@Validated @ModelAttribute("e")Employee e,BindingResult result) {
-//		if(result.hasErrors()) {
-//			return new ModelAndView("saveerror");	
-//		}
+		if(result.hasErrors()) {
+			return new ModelAndView("openpage");	
+		}
 		serviceimpl.save(e);
 		ModelAndView model=new ModelAndView("redirect:list");
 		return model;
@@ -77,9 +77,14 @@ return new ModelAndView("getall","map",e);
 	}
 	
 	@PostMapping("/update")
-	public String update(Employee e) {
-		int update = serviceimpl.update(e);
-		return  "redirect:list";
+	public ModelAndView update(@ModelAttribute("e") Employee e,BindingResult result) {
+		if(result.hasErrors()) {
+			return new ModelAndView("update");	
+		}
+		 
+				serviceimpl.update(e);
+				ModelAndView model=new ModelAndView("redirect:list");
+		return  model;
 	}
 
 	

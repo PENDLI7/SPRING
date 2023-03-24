@@ -11,7 +11,6 @@
 <h1>CreateIq Employees List</h1>
 
 <a href="./insert">AddEmployee</a><br></br> 
-<a href="./edit">updateEmployee</a><br></br>
  
       <table border ="1" width="500" align="center">
          <tr bgcolor="00FF7F">
